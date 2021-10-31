@@ -9,6 +9,7 @@ import java.lang.Integer;
 public class Task1 {
     public void run(BufferedReader reader) {
 
+        System.out.println("Type your string:");
         Scanner input = new Scanner(System.in);
         String str = input.next();
 
@@ -23,7 +24,7 @@ public class Task1 {
             numArr[i] = Integer.parseInt(arr[i]);
             sum += numArr[i];
         }
-        System.out.println(sum);
+        System.out.println("Sum is " + sum);
 
     }
 }

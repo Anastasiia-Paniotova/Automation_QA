@@ -17,11 +17,13 @@ import java.io.BufferedReader;
 public class Task3 {
     public void run(BufferedReader reader) {
 
+        System.out.println("Number of the lesson: ");
         Scanner input = new Scanner(System.in);
         int lessonNumber = input.nextInt();
         int hour = lessonNumber * 45 + lessonNumber / 2 * 5 + (lessonNumber - 1) / 2 * 15;
         int minutes = hour % 60;
 
+        System.out.println("The end of the lesson: ");
         System.out.print(9 + hour / 60 + " " + minutes);
 
     }

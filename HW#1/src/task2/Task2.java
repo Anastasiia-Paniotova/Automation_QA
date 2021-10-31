@@ -12,6 +12,7 @@ public class Task2 {
 // реализуйте задачу, которая принимает строку с консоли и вычленяет все символы латиницы/кириллицы и сортирует их,
 // указывая количество вхождений каждого символа
     public void run(BufferedReader reader) {
+        System.out.println("Type your string: ");
         Scanner input = new Scanner(System.in);
         String inputtedString = input.next();
         StringBuilder newString = new StringBuilder();
@@ -34,7 +35,7 @@ public class Task2 {
                     count++;
                 }
             }
-            System.out.println(arr[i] + " = " + count);
+            System.out.println("Result: " + arr[i] + " = " + count);
             count = 0;
         }
     }
