@@ -17,7 +17,9 @@ import java.util.Scanner;
 public class Task1 {
     public void run(BufferedReader reader) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Type your world/string: ");
         String inputString = scanner.nextLine();
+        System.out.println("Type your key: ");
         String keyString = scanner.nextLine();
         StringUtils.lowerCase(inputString); //регистронезависимые строки
         StringUtils.lowerCase(keyString);
@@ -109,17 +111,17 @@ public class Task1 {
         ; // порядок согласных
         String stringWithConsonant;
         stringWithConsonant = inputString.replaceAll("[^aeiouy]+", "");
-        System.out.println(stringWithConsonant);
+        //     System.out.println(stringWithConsonant);
 
         String keyStringWithConsonant;
         keyStringWithConsonant = keyString.replaceAll("[^aeiouy]+", "");
-        System.out.println(keyStringWithConsonant);
+        //       System.out.println(keyStringWithConsonant);
 
-//        if (stringWithConsonant.contains(keyStringWithConsonant)) {
-//            System.out.println(true);
-//        } else {
-//            System.out.println(false);
-//        }
+        if (stringWithConsonant.contains(keyStringWithConsonant)) {
+            System.out.println(true);
+        } else {
+            System.out.println(false);
+        }
 
 
     }
