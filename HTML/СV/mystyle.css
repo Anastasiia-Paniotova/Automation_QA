@@ -1,0 +1,21 @@
+body {
+	background-color: lightyellow;
+}
+
+.Contacts {
+	text-align: center;
+	border-style: dotted;
+}
+
+#edu_header {
+	text-align: left;
+	color: darkblue;
+}
+
+#linkGit:hover {
+	font-size: large;
+	color: darkblue;
+}
+
+
+
