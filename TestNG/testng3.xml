@@ -12,7 +12,7 @@
             </run>
         </groups>
         <classes>
-            <class name="DouTests"/>
+            <class name="test.java.DouTests"/>
         </classes>
     </test>
 </suite>
