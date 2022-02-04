@@ -64,19 +64,19 @@ public class DouTests {
     }
 
     //получить автора и название первой статьи в разделе Технические статьи
-    @Test(groups = {"positive"})
-    public void getAuthorAndTitle() {
-        WebElement firstArticle = driver.findElement(By.xpath("//div[@class='b-articles b-articles_tech']/ul/li/a[1]"));
-        firstArticle.click();
-
-        WebElement author = driver.findElement(By.className("name"));
-        WebElement title = driver.findElement(By.xpath("//*[@class='b-typo b-typo_post']/h1"));
-
-        //возможно они зафейляться, так как статьи меняются иногда
-        assertThat(author.getText(), equalToIgnoringCase("Taras Ustyianovych, Operational Intelligence Engineer в EPAM"));
-        assertThat(title.getText(),equalToIgnoringCase("MLOps: універсальний гайд з моніторингу моделей на проді"));
-
-    }
+//    @Test(groups = {"positive"})
+//    public void getAuthorAndTitle() {
+//        WebElement firstArticle = driver.findElement(By.xpath("//div[@class='b-articles b-articles_tech']/ul/li/a[1]"));
+//        firstArticle.click();
+//
+//        WebElement author = driver.findElement(By.className("name"));
+//        WebElement title = driver.findElement(By.xpath("//*[@class='b-typo b-typo_post']/h1"));
+//
+//        //возможно они зафейляться, так как статьи меняются иногда
+//        assertThat(author.getText(), equalToIgnoringCase("Taras Ustyianovych, Operational Intelligence Engineer в EPAM"));
+//        assertThat(title.getText(),equalToIgnoringCase("MLOps: універсальний гайд з моніторингу моделей на проді"));
+//
+//    }
 
     // тест с DataProvider, где проверяем, что наш поисковый запрос содержит ключевое слово
     @Test(dataProvider = "DataProvider", groups = {"negative"})

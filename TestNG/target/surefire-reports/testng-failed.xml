@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Group of group Suite]" verbose="0">
+  <test thread-count="5" name="Group of group Test(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="positive"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="test.java.DouTests">
+        <methods>
+          <include name="setUpPrerequisites"/>
+          <include name="closeBrowser"/>
+          <include name="getAuthorAndTitle"/>
+        </methods>
+      </class> <!-- test.java.DouTests -->
+    </classes>
+  </test> <!-- Group of group Test(failed) -->
+</suite> <!-- Failed suite [Group of group Suite] -->

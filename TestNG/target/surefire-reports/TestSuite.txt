@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 27.642 sec <<< FAILURE!
+getAuthorAndTitle(test.java.DouTests)  Time elapsed: 1.95 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: equalToIgnoringCase("Taras Ustyianovych, Operational Intelligence Engineer в EPAM")
+     but: was Vova Kyrychenko, CTO в Xenoss.io
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at test.java.DouTests.getAuthorAndTitle(DouTests.java:76)
+
